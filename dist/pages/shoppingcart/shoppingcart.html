@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/comment.css">
+    <link rel="stylesheet" href="../../css/pages/shoppingcar/shoppingcar.css">
+    <script data-main="shoppingcart.js" src="http://localhost:9000/js/lib/require.js"> </script>
+</head>
+<body>
+    <div class="header clearfix">
+        <span class="left">
+            <img src="../../img/s_05.png" alt="走秀网 全球时尚 正品保证">
+        </span>
+        <span class="right fr">
+            <p> 客服热线(免长途费)：
+                <em> 400-888-4499 </em>
+                <a href="" alt="在线客服">在线客服</a>
+            </p>
+            <ul>
+                <li>欢迎光临走秀网！</li> 
+                <li>客户名</li>
+                <li><a href="">[退出]</a></li> 
+                <li><a href="">[我的走秀]</a></li>
+                <li><a href="">帮助中心</a></li>
+            </ul> 
+        </span>
+    </div>
+    <div class="step">
+        <ul>
+            <li>
+                <span class="trangle"></span>
+                1.我的购物袋
+            </li> 
+            <li>
+                <span class="trangle"></span>
+                2.填写并核对订单信息
+            </li>
+            <li>
+                3.成功提交订单
+            </li>
+        </ul>
+    </div>
+    <!-- 购物车内容 -->
+    <div class="content" style="display:none">
+        <table cellspacing = "0">
+            <tr class="header">
+                <td><input type="checkbox"> &nbsp;全选</td>
+                <td>商品</td>
+                <td>购买(元)</td>
+                <td>数量</td>
+                <td>操作</td>
+            </tr>
+            <tr class="blank" style=" border: 1px solid #d6d3d3;">
+                <!-- 只能给td加边框啊 并且要加上 border-collapse：clollaose -->
+            <td colspan="5"></td>   
+            </tr>
+            <tr class="goods">
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>
+                    <span class="fl goods-img">
+                        <img src="http://localhost:9000/img/g1_66_88.jpg" alt="" class="" width="66" height="88"> 
+                    </span>  
+                    <span class="goods-mes fl">
+                        <p class="goods-name"> Festina </p>
+                        <p class="goods-introduce">
+                            <a href="">
+                                法斯蒂纳 女款情侣系列玫瑰金色表盘316l钢带石英腕表 F16813/2
+                            </a>
+                        </p>
+                        <p class="goods-size">
+                            颜色：<em>玫瑰金</em>
+                            尺码：<em>30mm</em>
+                        </p>
+                    </span>
+                </td>
+                <td>
+                    <p class="original-cost">￥1372</p>
+                    <p class="discount-cost">￥1167</p>
+                </td>
+                <td>
+                    <span class="minus">-</span>
+                    <input type="text" value="1">
+                    <span class="plus">+</span><br>
+                    <span class="hint">余额有限</span>
+                </td>
+                <td>
+                    <a href="to-collection">移至收藏夹</a><br>
+                    <a href="delete-goods">删除</a>
+                </td>
+            </tr>
+        </table>
+        <div class="content-bottom">
+            <ul class="left">
+                <li>
+                    <input type="checkbox">&nbsp; 全选
+                </li>
+                <li>删除</li>
+                <li>清除失效商品</li>
+                <li>移至收藏夹</li>
+            </ul>
+            <div class="detail">
+                
+                <span>
+                   <i>已选商品</i>  <b class="num">1</b> <i>件</i> 
+                </span>
+                <span>
+                   <i>总计</i> (不含运费)：<b class="all-price"> ¥  1167 </b> 
+                </span> <br>
+                <span >
+                   &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   已优惠：¥ <em class="preferential">205</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    商品总金额：¥ <em class="preferential-price">1372</em>
+                </span>
+
+            </div>
+            <input type="button" value="结算" class="cost-btn">
+        </div>
+    </div>
+    <!-- 当购物车没有商品时显示 -->
+    <div class="empty-cart">
+        <img src="http://localhost:9000/img/g1_66_88.jpg" alt="" width="52" height="57">
+        <i>
+            购物袋暂时没有商品，现在就去 <a href="http://localhost:9000"> 挑选自己喜欢的商品</a>&nbsp;。
+        </i>
+    </div>
+    <div class="blank"></div>
+    <!-- 收藏夹 -->
+    <div class="collect">
+        <span class="collect-btn">-</span>
+        <em> 看看您收藏的商品 : </em> <i class="not-login">请<a href="" class="login">登录</a>后查看您收藏的商品</i>
+        <table cellspacing = "0">
+            <tr>
+                <td>商品</td>
+                <td>走秀价</td>
+                <td>购买价</td>
+                <td>库存状态</td>
+                <td>操作</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="http://localhost:9000/img/g1_66_88.jpg" alt="" width="43" height="55">
+                    <b>男款&nbsp;复古修身牛仔裤</b>
+                </td>
+                <td>￥389</td>
+                <td>￥253</td>
+                <td>有货在售</td>
+                <td>放入购物袋</td>
+            </tr>
+        </table>
+        <a href="" class="check-collect fr">查看收藏夹中所有商品</a>
+    </div>
+    <div class="footer">
+        <p> Copyright © 2008-2018 Xiu.com 版权所有 . 粤ICP备07502993号 
+            <img src="http://localhost:9000/img/wab.png" alt="">
+            粤公网安备 44030402000804号 </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<script type="text/html" id="tempImg">
+    <%for(var i=0;i<list.length;i+=6) {%>
+        <div class="img-wrap clearfix">
+                <span>
+                    <img src=<%=list[i].url%> alt="">        
+                    <a href="http://localhost:9000/pages/goodsList/goodsList.html">
+                        <div class="changeOpacity"> </div>
+                    </a>
+                </span>
+                <span >
+                    <img src=<%=list[i+1].url%> alt="">
+                    <a href="http://localhost:9000/pages/goodsList/goodsList.html">
+                        <div class="changeOpacity"> </div>
+                    </a>
+                </span>
+                <span class="recommend-last">
+                    <img src=<%=list[i+2].url%> alt="">
+                    <a href="http://localhost:9000/pages/goodsList/goodsList.html">
+                        <div class="changeOpacity"> </div>
+                    </a>
+                </span>
+                <span >
+                    <img src=<%=list[i+3].url%> alt="">
+                    <a href="http://localhost:9000/pages/goodsList/goodsList.html">
+                        <div class="changeOpacity"> </div>
+                    </a>
+                </span>
+                <span >
+                    <img src=<%=list[i+4].url%> alt="">
+                    <a href="http://localhost:9000/pages/goodsList/goodsList.html">
+                        <div class="changeOpacity"> </div>
+                    </a>
+                </span>
+                <span class="recommend-last">
+                    <img src=<%=list[i+5].url%> alt="">
+                    <a href="http://localhost:9000/pages/goodsList/goodsList.html">
+                        <div class="changeOpacity"> </div>
+                    </a>
+                </span>
+        </div>
+    <%}%>
+</script>
+
+
+<script type="text/html" id="tempImg2">
+    <%for(var i=0;i<list.length;i+=2) {%>
+        <span>
+            <div class="text" style=<%=list[i].width%> >
+                <img src=<%=list[i].text%> alt="">
+            </div>
+            <a href="http://localhost:9000/pages/goodsList/goodsList.html">
+                <img class="active" src=<%=list[i].url%> alt="">
+            </a>
+        </span>
+        <span>
+            <div class="text" style=<%=list[i+1].width%>>
+                <img src=<%=list[i+1].text%> alt="">
+            </div>
+            <a href="http://localhost:9000/pages/goodsList/goodsList.html">
+                <img class="active" src=<%=list[i+1].url%> alt="">
+            </a>
+        </span>
+    <%}%>
+</script>
+
+
+<script type="text/html" id="goods">
+    <%for(var i=0;i<16;i++) {%>
+        <li>
+            <a href="http://localhost:9000/pages/detail/detail.html">
+                <img src=<%=list.get(i).url%> alt="" width="285px" height="380">
+            </a>
+            <span>
+                <p class="goods-name"><%=list.get(i).name%></p> 
+                <p class="goods-detail"><%=list.get(i).detail%></p>
+                <p class="goods-price"><%=list.get(i).price%></p>
+            </span>
+        </li>
+    <%}%>
+</script>

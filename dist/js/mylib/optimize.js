@@ -1,0 +1,1 @@
+define(function(){return{throttle:function(a,b=300,c){var d=0;return function(f){var e=new Date().getTime();e-d>b&&(a.call(c,f),d=new Date().getTime())}},debounce:function(a,b=300,c){var d=null;return function(f){clearTimeout(d),d=setTimeout(()=>{a.call(c,f)},b)}}}});

@@ -1,0 +1,32 @@
+<script type="text/html" id="goodslist">
+    <%for(var i=0;i<list.size;i++) {%>
+        <li class="goodslist">
+                <div class="active">
+                    <span class="goodsImg">
+                        <a href=<%="http://localhost:9000/pages/detail/detail.html#"+list.get(i).id%>>
+                            <img src=<%=list.get(i).url%> alt="" width="234" height="312">
+                        </a>
+                        <span class="size">
+                            &nbsp;&nbsp;可售尺码：
+                            <ul>
+                                <%for(var j=0;j<(listSize.get(i)?listSize.get(i).size.length:0);j++) {%>  
+                                    <li><%=listSize.get(i)?listSize.get(i).size[j].s:""%></li>
+                                <%}%>     
+                               <% if(! listSize.get(i) ) {%> 
+                               <li><%="均码"%></li>
+                               <%}%>
+                            </ul>
+                        </span>
+                        <span class="discount">
+                            <%=listDis.get(i)?listDis.get(i).discount.prefix:"该商品无折扣"%>
+                        </span>
+                    </span>
+                 </div>
+                <p class="goodsName"><%=list.get(i).name%></p>
+                <p class="goodsDetail"><%=list.get(i).detail%></p>
+                <em class="discount">￥<b><%=list.get(i).discountPrice%></b></em>
+                <em class="price">￥<b><%=list.get(i).price%></b></em>
+               
+            </li>
+        <%}%>
+</script>

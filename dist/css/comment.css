@@ -1,0 +1,53 @@
+body, p, h1, h2, h3, h4, h5, h6, ul, dl, dd, td, input, fieldset, textarea, option {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box !important;
+  font: 12px tahoma, arial, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input, img {
+  border: none;
+  vertical-align: top;
+}
+
+i, em {
+  font-style: normal;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  height: 0;
+  font-size: 0;
+  overflow: hidden;
+  clear: both;
+}
+
+.clearfix::before {
+  content: '';
+  display: block;
+  height: 0;
+  font-size: 0;
+  overflow: hidden;
+  clear: both;
+}

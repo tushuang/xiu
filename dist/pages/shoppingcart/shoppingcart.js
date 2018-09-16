@@ -1,0 +1,1 @@
+require(["../../js/conf/config.js"],function(){require(["jquery"],function(){console.log("\u6A21\u5757\u88AB\u52A0\u8F7D\u4E86")})});

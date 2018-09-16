@@ -1,0 +1,44 @@
+//文件名加下划线 表示这是一个工具文件 不会被编译
+//透明度兼容
+@mixin opacity ($val) {
+    opacity:$val/100;
+    filter:alpha(opacity=$val);
+}
+
+//清除浮动
+@mixin clearfix {
+    &::after{
+        content: "";
+        clear: both;
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+//制作三角形
+@mixin triangle($dir,$width,$color) {
+    width: 0px;height: 0px;
+    border-style: solid;
+    border-width: $width;
+    @if $dir == bottom {
+        border-color: $color transparent transparent transparent;
+    }
+    @if $dir == top{
+        border-color:  transparent transparent $color transparent;
+    }
+    @if $dir == left{
+        border-color:  transparent $color transparent transparent;
+    }
+    @if $dir == right{
+        border-color:  transparent transparent  transparent $color;
+    }
+}
+
+//圆角边框
+@mixin border-radius ($size) {
+    -webkit-border-radius : $size;
+    -moz-border-radius : $size;
+    -ms-border-radius : $size;
+    border-radius: $size;
+}
