@@ -43,16 +43,6 @@ $font:12px tahoma, arial, sans-serif;
                 em{
                     color: #f78407;
                 }
-                span.shoppingbag{
-                    background: white;
-                    position: absolute;
-                    top: 34px;
-                    left: 0px;
-                    width: 280px;
-                    min-height:100px ;
-                    display: none;
-                    z-index: 9999;
-                }
             }
             li.leftLi:nth-child(2):hover{
                 background: white url(../img/spriter2016.png) no-repeat -216px -76px;

@@ -1,0 +1,1 @@
+define(function(){return{parabola:function(c,d,e){var f={x:c.offsetLeft,y:c.offsetTop},g=-.005,a={x:d.x-f.x,y:-(d.y-f.y)},h=(a.y-g*a.x*a.x)/a.x,b=0,i=setInterval(function(){var a=f.x+b,j=f.y-(g*b*b+h*b);b+=13,c.style.left=a+"px",c.style.top=j+"px",parseInt(c.style.left)>=d.x&&(c.style.left=d.x+"px",e?e():"",clearInterval(i))},60)}}});

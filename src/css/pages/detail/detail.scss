@@ -19,6 +19,22 @@ ul.right-fix{
             height: 56px;
             background: url(http://www.xiustatic.com/static/css/default/img/r_menu_bg.jpg) no-repeat;
         }
+        
+    }
+    li:nth-child(3){
+        position: relative;
+        span.numRed{
+            position: absolute;
+            top: 3px;
+            right: 8px;
+            background: #E1333D;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            color: white;
+            line-height: 20px;
+        }
     }
     li:nth-child(1){
         height: 32px;
@@ -487,11 +503,42 @@ ul.right-fix{
                         margin-right: 30px;
                         margin-top: 30px;
                         color: #707070;
-                    }
-                   
+                    } 
                 }
                 span.bottomRight{
                     float: left;
+                    width: 284px;
+                    height: 68px;
+                    padding-left: 20px;
+                    padding-top: 55px;
+                    vertical-align: middle;
+                    p{
+                        line-height: 39px;
+                        color: #707070;
+                    }
+                    a{
+                        vertical-align: middle;
+                    }
+                    a.icon-weibo{
+                        color: #F29601;
+                        font-size: 35px;
+                    }
+                    a.icon-renrenwang{
+                        color: #46A4E2;
+                        font-size: 26px;
+                    }
+                    a.icon-icon{
+                        color: #F01371;
+                        font-size: 30px;
+                        display: inline-block;
+                        margin-top: -3px;
+                    }
+                    a.icon-douban{
+                        color: #38AC49;
+                        font-size: 35px;
+                        display: inline-block;
+                        margin-top: 3px;
+                    }
                 }
             }
         }
@@ -515,6 +562,13 @@ ul.right-fix{
                 a{
                     color: black;
                 }
+            }
+            li:nth-child(1){
+                background: #EA7514!important;
+                a{
+                    color: white!important;
+                }
+               
             }
             li:hover{
                 background: #EA7514;
@@ -552,6 +606,7 @@ ul.right-fix{
         // 商品详情
         div.boxLeft{
              float: left;
+             width: 775px;
             h3{
                 width: 758px;
                 height: 25px;
@@ -603,6 +658,7 @@ ul.right-fix{
                 padding: 30px;
                 border: $boder;
                 margin-bottom: 17px;
+                margin-top: 20px;
                 span.left{
                     width: 310px;
                     height: 110px;
@@ -692,13 +748,159 @@ ul.right-fix{
             div.comments{
                 width: 774px;
                 ul.select{
+                    background: #EFEFEF;
+                    padding-left: 10px;
+                    padding-right: 20px;
+                    height: 34px;
                     li{
                         float: left;
+                        line-height: 34px;
+                        a{
+                            display: inline-block;
+                            height: 30px;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            margin-top: 4px;
+                            color: black;
+                        }
+                        
+                        select{
+                            margin-top: 8px;
+                        }
+                    }
+                    li:nth-child(1){
+                        a{
+                            background: white;
+                            font-weight: bold;
+                        }
+                    }
+                    li:nth-child(5){
+                        margin-left: 135px;
+                    }
+                    li:nth-child(6){
+                        float: right;
                     }
                 }
-                div.comment{
+                div.comment-warp{
+                    width: 774px;
+                    div.comment{
+                        width: 774px;
+                        height: 178px;
+                        padding-top: 23px;
+                        div.people{
+                            text-align: center;
+                            width: 84px;
+                            height: 138px;
+                            position: relative;
+                            .icon{
+                                width: 80px;
+                                height: 80px;
+                               // border: $boder;
+                            }
+                            p{
+                                color: #646464;
+                                margin-top: 10px;
+                                margin-bottom: 16px;
+                            }
+                            a{
+                                color: #E4780C;
+                                text-decoration: underline;
+                            }
+                            a:hover+div.tip{
+                                display: block;
+                            }
+                            div.tip{
+                                display: none;
+                                position: absolute;
+                                width: 335px;
+                                height: 165px;
+                                padding: 10px;
+                                margin-right: 15px;
+                                border: 1px solid #F7BF4C;
+                                background: #FFF8EE;
+                                text-align: left;
+                                top: 54px;
+                                left: 105px;
+                                h4{
+                                    font-size: 14px;
+                                    color: #555555;
+                                    font-weight: bold
+                                }
+                                p{
+                                    text-indent: 2em;
+                                    color: #555555;
+                                    line-height: 20px;
+                                }
+                                span{
+                                    width: 10px;
+                                    height: 20px;
+                                    position: absolute;
+                                    top: 67px;
+                                    left: -10px;
+                                    background: url(http://comm.xiu.com/resources/comment/images/arrow.jpg) no-repeat;
+                                }
+                            }
+                        }
+                        div.mes{
+                            width: 620px;
+                            height: 136px;
+                            padding: 20px;
+                            border: $boder;
+                            span.produceImg{
+                                float: left;
+                                border: $boder;
+                            }
+                            ul{
+                                margin-left: 121px;
+                                li{
+                                   color: #555555;
+                                }
+                                li:nth-child(1){
+                                    margin-top: 3px;
+                                    margin-bottom: 5px;
+                                    b.star{ //星星
+                                        display: inline-block;
+                                        width: 77px;
+                                        height: 13px;
+                                        background: url(http://comm.xiu.com/resources/comment/images/goods_info.gif) no-repeat;
+                                        background-position: -194px -1189px;
+                                        margin-left: 20px;
+                                        margin-right: 20px;
+                                    }
+                                    .tag{
+                                        display: inline-block;
+                                        width: 53px;
+                                        height: 15px;
+                                        border: 1px solid #F7BF4C;
+                                        line-height: 15px;
+                                        color: #EA7514;
+                                        background: #FFF8EE;
+                                        text-align: center;
+                                        vertical-align: middle;
+                                    }
+                                }
+                                li:nth-child(3){
+                                    margin-top: 30px;
+                                    margin-bottom: 30px;
+                                }
+                                li:nth-child(4){
+                                    a{
+                                        color: #005AA0;
+                                    }
+                                    a:hover{
+                                        text-decoration: underline;
+                                    }
+                                    p{
+                                        float:right;
+                                        color: #B1B1B1;
+                                    }
+                                }
+                            }
 
+                        }
+                    }
                 }
+                
             }
         }
         // 浏览记录
@@ -717,7 +919,9 @@ ul.right-fix{
                 width: 206px;
                 min-height: 26px;
                 li{
-                    margin-top: 20px;
+                    margin-top: 10px;
+                    width: 195px;
+                    height: 120px;
                     img{
                         margin-left: 10px;
                         margin-right: 10px;
@@ -957,7 +1161,11 @@ div.footer{
 	width: 100px;
 	height: 100px;
 	position: absolute;
-    background-image: url(http://127.0.0.1:8848/%E6%94%BE%E5%A4%A7%E9%95%9C/images/move-box.png);
+    // background-image: url(http://127.0.0.1:8848/%E6%94%BE%E5%A4%A7%E9%95%9C/images/move-box.png);
+    width: 200px;
+    height: 200px;
+    background: white;
+    opacity: 0.5;
 }
 .images-cover{
 	height: 100%;

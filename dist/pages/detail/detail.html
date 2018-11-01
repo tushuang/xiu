@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="http://localhost:9000/css/comment.css">
     <link rel="stylesheet" href="http://localhost:9000/css/pages/detail/detail.css">
     <link rel="stylesheet" href="http://localhost:9000/css/iconfont.css">
+    <link rel="stylesheet" href="http://localhost:9000/css/pages/detail/iconfont.css">
 </head>
 <!-- 加载js模块 -->
 <script data-main="detail.js" src="http://localhost:9000/js/lib/require.js"></script>
@@ -18,19 +19,20 @@
     <!-- rightFix -->
     <ul class="right-fix">
         <li class="close">
-            <a href="">关闭</a>
+            <a href="#">关闭</a>
         </li>
         <li>
-            <a href=""></a>
+            <a href="#"></a>
         </li>
         <li>
-            <a href=""></a>
+            <a href="#"></a>
+            <span class="numRed">0</span>
         </li>
         <li>
-            <a href=""></a>
+            <a href="#"></a>
         </li>
         <li>
-            <a href=""></a>
+            <a href="#"></a>
         </li>
     </ul>
     <!-- 头部 -->
@@ -39,7 +41,7 @@
             <div class="header-top clearfix">
                 <ul class="left">
                     <li class="leftLi">
-                        <a href="">登录/注册</a>
+                        <a href="http://localhost:9000/pages/login/login.html">登录/注册</a>
                     </li>
                     <li class="leftLi">
                         <a href="http://localhost:9000/pages/shoppingcart/shoppingcart.html"> 
@@ -48,11 +50,13 @@
                             件
                         </a>
                         <span class="shoppingbag">
-                            购物袋暂时没有商品！！
+                            <ul class="cart-wrap">
+                                购物袋暂时没有商品
+                            </ul>
                         </span>
                     </li>
                     <li class="leftLi">
-                        <a href="">
+                        <a href="http://localhost:9000/pages/myCenter/myCenter.html">
                             我的走秀
                         </a>
                         <ul class="myshow">
@@ -76,7 +80,7 @@
             </div>
             <div class="header-bottom  clearfix">
                 <ul>
-                    <li><a href="">首页</a></li> 
+                    <li><a href="http://localhost:9000">首页</a></li> 
                     <li><a href="">专题</a></li>
                     <li><a href="">男士</a></li>
                     <li><a href="">女士</a></li>
@@ -115,118 +119,7 @@
             </ul>
         </div>
         <div class="goodsMes">
-            <div class="magnifier" id="magnifier1">
-                    <div class="magnifier-container">
-                        <div class="images-cover"></div>
-                        <!--当前图片显示容器-->
-                        <div class="move-view"></div>
-                        <!--跟随鼠标移动的盒子-->
-                    </div>
-                    <div class="magnifier-assembly">
-                        <!-- <div class="magnifier-btn">
-                            <span class="magnifier-btn-left">&lt;</span>
-                            <span class="magnifier-btn-right">&gt;</span>
-                        </div> -->
-                        <!--按钮组-->
-                        <div class="magnifier-line">
-                            <ul class="clearfix animation03">
-                                <li>
-                                    <div class="small-img">
-                                        <img src="http://image.zoshow.com/upload/goods20171114/24020292/240202920001/g1_402_536.jpg" />
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="small-img">
-                                        <img src="http://image.zoshow.com/upload/goods20171114/24020292/240202920001/g1_402_536.jpg" />
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="small-img">
-                                        <img src="http://image.zoshow.com/upload/goods20171114/24020292/240202920001/g1_402_536.jpg" />
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="small-img">
-                                        <img src="http://image.zoshow.com/upload/goods20171114/24020292/240202920001/g1_402_536.jpg" />
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="small-img">
-                                        <img src="http://image.zoshow.com/upload/goods20171114/24020292/240202920001/g1_402_536.jpg" />
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!--缩略图-->
-                    </div>
-                    <div class="magnifier-view"></div>
-                    <!--经过放大的图片显示容器-->
-            </div>
-            
-            <div class="rightIntroduce">
-                <div class="introTop">
-                    <p class="goodsTitle">
-                        日本美浓烧青海波4.2寸日式深碗 
-                        <em class="discount">[ 一件9折 两件8.5折 三件8折 ]</em>
-                    </p>
-                    <p class="subtitle">
-                        品&nbsp;&nbsp;&nbsp;牌 : Tasaisikyo  (多彩思居) 
-                        <a href="">已有27条品牌评论</a>
-                        <em class="goodsNum">商品编号：24020292</em>
-                    </p>
-                </div>
-                <ul class="introCenter">
-                    <li>
-                        走&nbsp;秀 价:<em class="price">&nbsp;￥79</em>
-                    </li>
-                    <li>
-                        促 &nbsp;  &nbsp;&nbsp;销:
-                        <span>打折</span> <em>一件9折两件8.5折三件8折</em>
-                    </li> 
-                    <li>
-                        发 货 地: <em class="area">国内</em>
-                        <em class="arrTime">预计2-5个工作日送达</em>
-                    </li>
-                </ul>
-                <ul class="select">
-                    <li>
-                        颜 &nbsp; 色: <span> 蓝白 </span>
-                    </li>
-                    <li>
-                        尺 &nbsp; 码: <span> 均码 </span>
-                    </li>
-                    <li>
-                        数 &nbsp; 量:  
-                        <span class="count">
-                            <span class="minus">-</span>
-                            <input type="text" value="1">
-                            <span class="plus">+</span>
-                            <span class="hint">件</span>
-                        </span>
-                    </li>
-                    <li>
-                        <a class="server1" href=""> 由妍品贸易提供 </a>
-                        <a class="server2" href=""> 由走秀网提供售后服务</a>
-                    </li>
-                    <li>
-                        <a class="buy" href=""></a>
-                        <a class="addShoppingcart" href=""></a>
-                        <a class="collect" href=""></a>
-                    </li>
-                    <li>
-                        电话订购 :  <em class="phone"> 400-888-4499 </em>   <em class="limitTime">( 09:00-19:00 )</em>
-                    </li>
-                </ul>
-                <div class="introBottom">
-                    <span class="bottomLeft">
-                        <img src="http://my.xiu.com/v3/qrcode/item/53111387" alt="" width="90" height="90">
-                       <p>扫一扫二维码<br>分享给朋友</p> 
-                    </span>
-                    <span class="bottomRight">
-                        <p>分享到:</p>
-                    </span>
-                </div>
-            </div>
+           <!-- 商品详情 -->
         </div>
 
         <div class="goodsDetail">
@@ -284,7 +177,10 @@
                 </span>
                 <!-- 图片详情介绍 -->
                 <div class="goodsImg">
-
+                    <img alt="750×1278" src="http://images.xiustatic.com/mop/onlineEditor/4118/images/2017/11/20171114/601(5).jpg" width="700" height="1192">
+                    <img alt="750×1341" src="http://images.xiustatic.com/mop/onlineEditor/4118/images/2017/11/20171114/602(5).jpg" width="700" height="1251">
+                    <img alt="750×1105" src="http://images.xiustatic.com/mop/onlineEditor/4118/images/2017/11/20171114/608(5).jpg" width="700" height="1031">
+                    <img alt="750×1110" src="http://images.xiustatic.com/mop/onlineEditor/4118/images/2017/11/20171114/609(4).jpg" width="700" height="1036">
                 </div>
                 <!-- 评价 -->
                 <div class="satisfaction">
@@ -327,18 +223,18 @@
                     </span>
                 </div>
                 <div class="comments">
-                    <ul class="select">
+                    <ul class="select clearfix">
                         <li>
-                            <a href="">全部(3527)</a>
+                            <a href="#">全部(3527)</a>
                         </li>
                         <li>
-                            <a href="">满意(3527)</a>
+                            <a href="#">满意(3527)</a>
                         </li>
                         <li>
-                            <a href="">一般(99)</a>
+                            <a href="#">一般(99)</a>
                         </li>
                         <li>
-                            <a href="">不满意(9)</a>
+                            <a href="#">不满意(9)</a>
                         </li>
                         <li>
                             <select name="" id="">
@@ -347,23 +243,64 @@
                             </select>
                         </li>
                         <li>
-                            <section>
+                            <select class="rightSelect">
                                 <option value="">全部商品类型</option>
                                 <option value="">家居</option>
                                 <option value="">服装服饰</option>
-                            </section>
+                            </select>
                         </li>
                     </ul>
-                    <div class="comment">
-                        <div class="people">
-
+                    <div class="comment-warp">
+                        <div class="comment clearfix">
+                            <div class="people fl">
+                                <span class="icon">
+                                    <img src="http://comm.xiu.com/resources/comment/images/usericon/none.jpg" alt="">
+                                </span>
+                                <p class="clientName">x****1</p>
+                                <a href="">已购买过此商品</a>
+                                <div class="tip">
+                                    <span class="triangle"></span>
+                                    <h4>什么是"已购买过此商品"的用户评论</h4>
+                                    <p>
+                                        当标有"已购买过此商品"时，则表明撰写此评论的用户在走秀网上购买过
+                                        此商品。这些用户的评论有助于用户在决定是否购买此商品作为参考。
+                                    </p>
+                                    <p>
+                                        没有"购买过此商品"的用户评论者可能通过其他途径已经购买或使用过该商品。
+                                        他们分享对商品的使用经验，也有助于用户另一个参考途径。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mes fr">
+                                <span class="produceImg">
+                                    <img src="http://images.xiu.com/upload/goods20170911/24019872/240198720001/g1_100_100.jpg" alt="">
+                                </span>
+                                <ul>
+                                    <li>
+                                        评分：<b class="star"></b>
+                                        <em class="tag">已获赠券</em>
+                                        颜色：无
+                                    </li>
+                                    <li>
+                                        尺码：双耳300mml
+                                    </li>
+                                    <li>
+                                        除了不喜欢盖子和瓶身太多图案，尤其瓶身凹凸的纹理不容易清洗，其他方面都可以
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            四季密封罐 双耳300毫升 2只装
+                                        </a>
+                                        <p>发表于2018-08-25 11:19:56</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="mes">
 
-                        </div>
+                        
+
                     </div>
-                    
-                </div>
+                 </div>
             </div>
             <!-- 右边的浏览记录 -->
             <div class="boxRight fr">
@@ -372,7 +309,7 @@
                     <li>
                         <img class="fl" src="http://image.zoshow.com/upload/goods20170523/10570502/105705020001/g1_81_108.jpg" alt="">
                         <p class="goodsName">Prada</p>
-                        <a href="">男士圆领简洁设计长袖T恤</a>
+                        <a href="#">男士圆领简洁设计长袖T恤</a>
                     </li>
                 </ul>
             </div>

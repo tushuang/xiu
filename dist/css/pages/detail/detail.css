@@ -21,6 +21,23 @@ ul.right-fix li a {
   background: url(http://www.xiustatic.com/static/css/default/img/r_menu_bg.jpg) no-repeat;
 }
 
+ul.right-fix li:nth-child(3) {
+  position: relative;
+}
+
+ul.right-fix li:nth-child(3) span.numRed {
+  position: absolute;
+  top: 3px;
+  right: 8px;
+  background: #E1333D;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: white;
+  line-height: 20px;
+}
+
 ul.right-fix li:nth-child(1) {
   height: 32px;
   text-align: center;
@@ -554,6 +571,44 @@ ul.right-fix li:nth-child(5) a:hover {
 
 .banner div.goodsMes div.rightIntroduce div.introBottom span.bottomRight {
   float: left;
+  width: 284px;
+  height: 68px;
+  padding-left: 20px;
+  padding-top: 55px;
+  vertical-align: middle;
+}
+
+.banner div.goodsMes div.rightIntroduce div.introBottom span.bottomRight p {
+  line-height: 39px;
+  color: #707070;
+}
+
+.banner div.goodsMes div.rightIntroduce div.introBottom span.bottomRight a {
+  vertical-align: middle;
+}
+
+.banner div.goodsMes div.rightIntroduce div.introBottom span.bottomRight a.icon-weibo {
+  color: #F29601;
+  font-size: 35px;
+}
+
+.banner div.goodsMes div.rightIntroduce div.introBottom span.bottomRight a.icon-renrenwang {
+  color: #46A4E2;
+  font-size: 26px;
+}
+
+.banner div.goodsMes div.rightIntroduce div.introBottom span.bottomRight a.icon-icon {
+  color: #F01371;
+  font-size: 30px;
+  display: inline-block;
+  margin-top: -3px;
+}
+
+.banner div.goodsMes div.rightIntroduce div.introBottom span.bottomRight a.icon-douban {
+  color: #38AC49;
+  font-size: 35px;
+  display: inline-block;
+  margin-top: 3px;
 }
 
 .banner div.goodsDetail {
@@ -579,6 +634,14 @@ ul.right-fix li:nth-child(5) a:hover {
 
 .banner div.goodsDetail ul.topNav li a {
   color: black;
+}
+
+.banner div.goodsDetail ul.topNav li:nth-child(1) {
+  background: #EA7514 !important;
+}
+
+.banner div.goodsDetail ul.topNav li:nth-child(1) a {
+  color: white !important;
 }
 
 .banner div.goodsDetail ul.topNav li:hover {
@@ -621,6 +684,7 @@ ul.right-fix li:nth-child(5) a:hover {
 
 .banner div.goodsDetail div.boxLeft {
   float: left;
+  width: 775px;
 }
 
 .banner div.goodsDetail div.boxLeft h3 {
@@ -678,6 +742,7 @@ ul.right-fix li:nth-child(5) a:hover {
   padding: 30px;
   border: 1px solid #E5E5E5;
   margin-bottom: 17px;
+  margin-top: 20px;
 }
 
 .banner div.goodsDetail div.boxLeft div.satisfaction span.left {
@@ -785,8 +850,179 @@ ul.right-fix li:nth-child(5) a:hover {
   width: 774px;
 }
 
+.banner div.goodsDetail div.boxLeft div.comments ul.select {
+  background: #EFEFEF;
+  padding-left: 10px;
+  padding-right: 20px;
+  height: 34px;
+}
+
 .banner div.goodsDetail div.boxLeft div.comments ul.select li {
   float: left;
+  line-height: 34px;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments ul.select li a {
+  display: inline-block;
+  height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 4px;
+  color: black;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments ul.select li select {
+  margin-top: 8px;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments ul.select li:nth-child(1) a {
+  background: white;
+  font-weight: bold;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments ul.select li:nth-child(5) {
+  margin-left: 135px;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments ul.select li:nth-child(6) {
+  float: right;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments div.comment-warp {
+  width: 774px;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments div.comment-warp div.comment {
+  width: 774px;
+  height: 178px;
+  padding-top: 23px;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments div.comment-warp div.comment div.people {
+  text-align: center;
+  width: 84px;
+  height: 138px;
+  position: relative;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments div.comment-warp div.comment div.people .icon {
+  width: 80px;
+  height: 80px;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments div.comment-warp div.comment div.people p {
+  color: #646464;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments div.comment-warp div.comment div.people a {
+  color: #E4780C;
+  text-decoration: underline;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments div.comment-warp div.comment div.people a:hover + div.tip {
+  display: block;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments div.comment-warp div.comment div.people div.tip {
+  display: none;
+  position: absolute;
+  width: 335px;
+  height: 165px;
+  padding: 10px;
+  margin-right: 15px;
+  border: 1px solid #F7BF4C;
+  background: #FFF8EE;
+  text-align: left;
+  top: 54px;
+  left: 105px;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments div.comment-warp div.comment div.people div.tip h4 {
+  font-size: 14px;
+  color: #555555;
+  font-weight: bold;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments div.comment-warp div.comment div.people div.tip p {
+  text-indent: 2em;
+  color: #555555;
+  line-height: 20px;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments div.comment-warp div.comment div.people div.tip span {
+  width: 10px;
+  height: 20px;
+  position: absolute;
+  top: 67px;
+  left: -10px;
+  background: url(http://comm.xiu.com/resources/comment/images/arrow.jpg) no-repeat;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments div.comment-warp div.comment div.mes {
+  width: 620px;
+  height: 136px;
+  padding: 20px;
+  border: 1px solid #E5E5E5;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments div.comment-warp div.comment div.mes span.produceImg {
+  float: left;
+  border: 1px solid #E5E5E5;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments div.comment-warp div.comment div.mes ul {
+  margin-left: 121px;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments div.comment-warp div.comment div.mes ul li {
+  color: #555555;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments div.comment-warp div.comment div.mes ul li:nth-child(1) {
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments div.comment-warp div.comment div.mes ul li:nth-child(1) b.star {
+  display: inline-block;
+  width: 77px;
+  height: 13px;
+  background: url(http://comm.xiu.com/resources/comment/images/goods_info.gif) no-repeat;
+  background-position: -194px -1189px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments div.comment-warp div.comment div.mes ul li:nth-child(1) .tag {
+  display: inline-block;
+  width: 53px;
+  height: 15px;
+  border: 1px solid #F7BF4C;
+  line-height: 15px;
+  color: #EA7514;
+  background: #FFF8EE;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments div.comment-warp div.comment div.mes ul li:nth-child(3) {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments div.comment-warp div.comment div.mes ul li:nth-child(4) a {
+  color: #005AA0;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments div.comment-warp div.comment div.mes ul li:nth-child(4) a:hover {
+  text-decoration: underline;
+}
+
+.banner div.goodsDetail div.boxLeft div.comments div.comment-warp div.comment div.mes ul li:nth-child(4) p {
+  float: right;
+  color: #B1B1B1;
 }
 
 .banner div.goodsDetail div.boxRight {
@@ -809,7 +1045,9 @@ ul.right-fix li:nth-child(5) a:hover {
 }
 
 .banner div.goodsDetail div.boxRight ul.goodsList li {
-  margin-top: 20px;
+  margin-top: 10px;
+  width: 195px;
+  height: 120px;
 }
 
 .banner div.goodsDetail div.boxRight ul.goodsList li img {
@@ -1071,7 +1309,10 @@ div.footer .certificate span img {
   width: 100px;
   height: 100px;
   position: absolute;
-  background-image: url(http://127.0.0.1:8848/%E6%94%BE%E5%A4%A7%E9%95%9C/images/move-box.png);
+  width: 200px;
+  height: 200px;
+  background: white;
+  opacity: 0.5;
 }
 
 .images-cover {

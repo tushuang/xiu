@@ -1,0 +1,10 @@
+<script id="shoppingCart" type="text/html">
+    <%for(var i=0;i<list.length;i++) {%>
+    <li class=<%=list[i].id%>>
+        <img src=<%=list[i].url+"g1_402_536.jpg"%> alt="" width="52" height="52">
+        <p class="goodsName fl"><%=list[i].brand%></p> <a class="cartDelete" href="javaScript:;">删除</a>
+        <p class="goodsTitle"><%=list[i].name%> <em><%= "颜色："+list[i].color%></em> </p>
+        <p class="goodsPrice"><em class="unitPrice"><%="￥"+list[i].price%></em> <em><%="×"+list[i].count%></em> </p>
+    </li>
+    <%}%>
+</script>

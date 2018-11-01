@@ -30,4 +30,44 @@ a:hover{
     overflow: hidden;
     clear: both; 
 }
-// div,span{box-shadow: 0 0 1px black;}
+// div,span{box-shadow: 0 0 1px black;} 
+
+span.shoppingbag{ 
+    background: white;
+    position: absolute;
+    top: 34px;
+    left: 0px;
+    width: 280px;
+    min-height:100px ;
+    display: none;
+    z-index: 9999;
+    padding: 1px 8px;
+    border: 1px solid #e5e4e4;
+    ul{
+        li{
+            width: 264px;
+            height: 63px;
+            margin-top: 10px;
+            img{
+                float: left;
+                margin-right: 3px;
+                border:  1px solid #e5e4e4;
+            }
+            p{
+                font-size: 13px;
+                color: #363636;
+            }
+            p.goodsPrice{
+                color: #EB7515;
+            }
+            a.cartDelete{
+                float: right;
+                color: #363636;
+                text-decoration: underline;
+            }
+            a.cartDelete:hover{
+                color: #d50215;
+            }
+        }
+    }
+}

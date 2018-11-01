@@ -10,6 +10,9 @@ requirejs.config({
         "optimize" : "/js/mylib/optimize",
         "ajaxMapping" : "/js/conf/ajaxMapping",
         "paging" : "/js/plugin/jquerypage",
-        "magnifier" : "/js/plugin/magnifier"
+        "magnifier" : "/js/plugin/magnifier",
+        "cookie" : "/js/mylib/cookie",
+        "parabola" : "/js/mylib/parabola",
+        "common" : "/js/mylib/common"
     } 
 })

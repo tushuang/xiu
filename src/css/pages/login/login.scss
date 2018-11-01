@@ -1,0 +1,260 @@
+
+$container : 1200px;
+$border:1px solid #E5E5E5;
+div.top{
+    div.icon{
+        width: $container;
+        margin: auto;
+        height: 60px;
+        img{
+            margin-top: 15px;
+        }
+    }
+}
+div.main{
+    width: 100%;
+    height: 688px;
+    background: url(https://login.xiu.com/v3/resources/user/css/img/login_bg.jpg) center no-repeat #f7f2ec;
+    border: 1px solid #E5E5E5;
+    .loginBox{
+        width: 420px;
+        min-height: 560px;
+        border: 1px solid #F2E1AF;
+        float: right;
+        background: white;
+        margin-right: 120px;
+        margin-top: 75px;
+        box-shadow: 0 0 20px #c8c8c8;
+        position: relative;
+        .loginWay{
+            width: 420px;
+            height: 52px;
+            background: #f7f7f9;
+            line-height: 50px;
+            text-align: center;
+            span{
+                float: left;
+                width: 210px;
+                font-size: 16px;
+                color: #AFAFAF;
+            }
+            .clicked{
+                color: #3e3e3e;
+                border-bottom: 2px solid #464646;
+                font-weight: bold;
+            }
+        }
+        span.tip{
+            color: #D2041F;
+            display: inline-block;
+            position: relative;
+            display: none;
+            top: 13px;
+            left: 59px;
+            vertical-align: middle;
+                b{
+                    vertical-align: middle;
+                    display: inline-block;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background: url(https://login.xiu.com/v3/resources/user/css/img/login_sprite.png) -200px 0 no-repeat;
+                }
+            }
+        span.tipCode{
+            top: 8px;
+            left: 3px;
+            display: none;
+        }
+        .form{
+            width: 302px;
+            min-height: 185px;
+            margin: auto;
+            margin-top:30px; 
+            position: relative;
+            form{
+                width: 302px;
+                height: 185px;
+                input.number{
+                    width: 280px;
+                    height: 24px;
+                    padding: 5px 10px;
+                    border: $border;
+                    color: #464646;
+                }
+                span.title{
+                    position: absolute;
+                    top: -9px;
+                    left: 7px;
+                    //width: 48px;
+                    height: 20px;
+                    padding: 0 3px;
+                    color: #AFAFAF;
+                    background: white;
+                }
+                input.code{
+                    width: 165px;
+                    height: 24px;
+                    padding: 5px 10px;
+                    border: $border;
+                    float: left;
+                    margin-top: 17px;
+                    color: #AFAFAF;
+                }
+                a.verification-code{
+                    float: right;
+                    width: 100px;
+                    height: 34px;
+                    border: $border;
+                    margin-top: 17px;
+                    text-align: center;
+                    line-height: 34px;
+                    background: #F7F7F9;
+                    color: #464646;
+                    font-size: 13px;
+                }
+                p.find{
+                    text-align: right;
+                    color: #464646;
+                    margin-top: 68px;
+                    cursor: pointer;
+                }
+                .login{
+                    border: none;
+                    width: 288px;
+                    height: 38px;
+                    padding: 1px 6px;
+                    background: #D2041F;
+                    border-radius: 19px;
+                    text-align: center;
+                    color: white;
+                    font-size: 14px;
+                    margin-top: 17px;
+                }
+                .login:hover{
+                    background: #B3031A;
+                }
+            }
+            form.loginType2{
+                input.password{
+                    width: 280px;
+                }
+            }
+            p.text{
+                color: #E7E7E7;
+                text-align: center;
+                margin-top: 27px;
+                em{
+                    font-size: 12px;
+                    color: #3E3E3E;
+                }
+            }
+            a.icon{
+                display: inline-block;
+                margin-left: 13px;
+                margin-right: 13px;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                margin-top: 22px;
+                background: url(https://login.xiu.com/v3/resources/user/css/img/login_sprite.png) no-repeat;
+            }
+            a.icon1{
+                background-position: 0 0; 
+            }
+            a.icon2{
+                background-position: -30px 0; 
+            }
+            a.icon3{
+                background-position: -60px 0; 
+            }
+            a.icon4{
+                background-position: -90px 0; 
+            }
+            a.icon5{
+                background-position: -120px 0; 
+            }
+            p.agreement{
+                text-align: center;
+                margin-top: 17px;
+                color: #AFAFAF;
+                a{
+                    color: #005BA1;
+                }
+            }
+            
+        }
+        a.qrCode{
+            width: 60px;
+            height: 60px;
+            display: inline-block;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            background: url(https://login.xiu.com/v3/resources/user/css/img/login_sprite.png)  0 -400px no-repeat;
+        }
+        a.tip2{
+            width: 85px;
+            height: 25px;
+            position: absolute;
+            bottom: 17px;
+            right: 47px;
+            background: url(https://login.xiu.com/v3/resources/user/css/img/login_sprite.png) 0 -360px no-repeat; 
+        }
+            
+    }
+}
+div.footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    ul.mes{
+        width: 700px;
+        height: 32px;
+        margin: auto;
+        text-align: center;
+        li{
+            float: left;
+            a{
+                color: black;
+                margin: 0 8px 0 6px;
+                font-size: 12px;
+                position: relative;
+            }
+            a::after{
+                content: "";
+                display: block;
+                width: 1px;
+                position: absolute;
+                right: -7px;
+                background: #9a9a9a;
+                top: 2px;
+                bottom: 3px;
+            }
+            a:hover{
+                color: #f78407;
+            }
+        }
+        li:nth-child(10){
+            a::after{
+                display: none;
+            }
+        }
+    }
+    .copyright{
+        margin-left:300px;
+        font-size: 12px;
+        color: #999;
+        line-height: 12px;
+        vertical-align: middle;
+        img{
+            vertical-align: middle;
+        }
+        a{
+            font-weight: bold;
+            color: #999;
+        }
+        a:hover{
+            color: #f78407;
+        }
+    }
+}

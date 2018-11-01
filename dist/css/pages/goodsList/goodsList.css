@@ -54,7 +54,7 @@
   width: 280px;
   min-height: 100px;
   display: none;
-  z-index: 9999;
+  z-index: 999;
 }
 
 .header-content .header-top-wrap .header-top ul.left li.leftLi:nth-child(2):hover {
